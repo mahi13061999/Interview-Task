@@ -1,0 +1,570 @@
+:root{
+    --primary-color: #fb4c47;
+    --text-color: #035755;
+    --secondary-color: #ffe1e1;
+    --fw: 750;
+}
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    display: block;
+}
+head{
+    display: none;
+}
+body{
+    font-family: "Robot",sans-serif;
+    background: linear-gradient(rgba(225,191,190,0.3),white)no-repeat;
+    background-size: 100vw 100vh;
+    color: var(--text-color);
+}
+#main-nav .main-content{
+    margin-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-content{
+    max-width: 80%;
+    margin: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    transform: scale(1);
+    margin-right: 5px;
+}
+.logo a{
+    font-family: "Red Hat Display",sans-serif;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    font-weight: var(--fw);
+    letter-spacing: 1px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.navigations{
+    display: flex;
+    align-items: center;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    list-style: none;
+    display: list-item;
+}
+#main-nav .navigations a{
+    position: relative;
+}
+.navigations .current{
+    color: var(--primary-color);
+}
+.navigations a{
+    margin-right: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    font-family: "Prompt",sans-serif;
+    font-weight: var(--fw);
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#main-nav .navigations .drop::before, #main-nav .navigations .drop::after{
+    content: "";
+    display: block;
+    margin:auto;
+    position: absolute;
+    left: 50%;
+    background: var(--primary-color);
+    transition: all 0.2s ease;
+}
+#main-nav .navigations .drop::before{
+    height: 2px;
+    width: 0px;
+    top: 100%;
+}
+#main-nav .navigations .current .drop::after{
+    top: 115%;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+}
+#main-nav .navigations .contact{
+    padding: 0.6rem 1.7rem;
+    border: 2px solid var(--primary-color);
+    margin: 0;
+}
+#main-nav .navigations a{
+    position: relative;
+
+}
+.red-text{
+    color: var(--primary-color);
+    display: block;
+    font-size: 1.8rem;
+}
+.btn{
+    border-radius: 50px;
+    padding: 1.2rem 3rem;
+    border: none;
+    font-size:20px ;
+    font-weight: bold;
+    line-height: 29px;
+    cursor: pointer;
+}
+#showcase{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+#showcase .main-content{
+    display: flex;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+#showcase .main-content .content{
+    font-family: "Red Hat Display",sans-serif;
+    padding: 15px;
+    margin-right: 280px;
+    margin-top: 0;
+    width: 641px;
+    height: 443px;
+    left: 243px;
+    top: 411px
+}
+.py-2{
+    padding: 20px 0;
+}
+h1{
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.content .red-text{
+    margin-bottom: 10px;
+}
+.content p{
+    margin-bottom: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 185%;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.dark-background{
+    margin-top:10px; 
+    background: var(--primary-color);
+    color: #fff;
+    
+}
+.image-area img{
+    width: 890px;
+    height: 800px;
+    left: 1090px;
+    top:147px ;
+}
+#intro{
+    position: relative;
+}
+#intro .main-content{
+    display: flex;
+    align-items: center;
+    margin: 100px;
+    max-width: 90vw;
+}
+#intro .main-content .content .py-2{
+    padding: 20px 0;
+    width: 600px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#intro .image-area{
+    min-width: 50vw;
+    height: 70vh;
+}
+#intro .image-area img{
+    transform: scale(1.3);
+}
+#intro .main-content .content p{
+    width: 700px;
+    height: 235px;
+    left: 1033px;
+    top: 1162px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 185%;
+}
+.image-area img{
+    width: 100%;
+    height: 100%;
+}
+#intro .content{
+    padding-left: 20px;
+}
+.content{
+    font-family: "Red Hat Display",sans-serif;
+    padding:15px;
+}
+.light-background{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+#intro .background-image{
+    position: absolute;
+    background: url(./Images-in-SVG-format/intro-right-half.svg) no-repeat center center;
+    width: 200px;
+    height: 300px;
+    transform: scale(1);
+    bottom: -121px;
+    right: -7px;
+}
+#intro .background-image-1{
+    position: absolute;
+    background: url(./Images-in-SVG-format/intro-corona.svg) no-repeat center center;
+    width: 200px;
+    height: 300px;
+    transform: scale(0.9);
+    bottom: -300px;
+    right: 50px;
+}
+#contagion .content,#symptoms .content,#precautions .content{
+    text-align: center;
+}
+#contagion .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#contagion .box{
+    text-align: center;
+    margin: 30px 15px;
+    box-shadow: 0 0 30px -2px rgba(229,229,229,1);
+    width: 400px;
+    height: 555px;
+    background: #fff;
+    border-radius: 3px;
+    position: relative;
+}
+.p-2{
+    padding: 20px;
+}
+#contagion .box .image-area{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.image-area img{
+    width: 100%;
+    height: 100%;
+}
+#contagion .cards .box .faded-covid-logo{
+    position: absolute;
+    background: url(./Images-in-SVG-format/corona-side-logo.svg) no-repeat;
+    right: 80%;
+    top: 40%;
+    width: 235px;
+    height: 235px;
+    z-index: -12;
+}
+#contagion .main-content .cards .p-2 .py-1{
+    font-family: "Gelion";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 147%;
+    /* identical to box height, or 53px */
+    text-transform: capitalize;
+    color: #035755;
+}
+#contagion .main-content .cards .p-2  p{
+    font-family: "Gelion";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 185%;
+    /* or 33px */
+    text-align: center;
+    text-transform: capitalize;
+    color: #4B4F51;
+}
+#symptoms .image-area{
+    width: 100%;
+    margin: auto;
+    height: 80vh;
+}
+#symptoms .image-area-1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 250px;
+    top:3400px;
+    transform: scale(0.8);
+}
+#symptoms .image-area-2{
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    transform: scale(0.9);
+    top: 3700px;
+    right: 300px;
+}
+#precautions{
+    position: relative;
+    overflow: hidden;
+}
+#precautions .content{
+    text-align: center;
+}
+#precautions .precaution .details,#precautions .precaution{
+    display: flex;
+    justify-content: center;
+}
+#precautions .main-content .subscribe-background{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    top: 580px;
+    transform: scale(1.1);
+}
+#precautions .main-content .precaution .subscribe-background-00{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 130px;
+    bottom: 500px;
+    transform: scale(1.2);
+}
+#precautions .main-content .precaution .subscribe-background-001{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 80px;
+    bottom: 300px;
+    transform: scale(1);
+}
+#precautions .cover-box .precaution:nth-child(odd) .image-area{
+    order: 2;
+}
+#precautions .image-area{
+    height: 600px;
+    width: 600px;
+}
+#precautions .image-area img{
+    transform: scale(0.9);
+}
+.image-area img{
+    height: 100%;
+    width: 100%;
+}
+#precautions .details .light-background{
+    height: 70px;
+    width: 70px;
+    padding: 18px;
+    font-size: 24px;
+    border-radius: 50%;
+    font-weight: 1000;
+    margin-top: 160px;
+}
+#precautions .details .text{
+    max-width: 800px;
+    margin: auto;
+}
+.pyd-3{
+    padding-bottom: 30px;
+}
+#map .main-content{
+    justify-content: center;
+    max-width: 70%;
+}
+#map .main-content,#map .image-area .icons .locate,#map .effected-details h1,#map .effected-details li,#map .effected-details li span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#map .image-area{
+    max-width: 900px;
+    height: 550px;
+    z-index: -12;
+    margin-right: 30px;
+    position: relative;
+}
+.image-area img{
+    width: 100%;
+    height: 100%;
+}
+#map .icons .locate{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    flex-direction: column;
+}
+#map .icons span{
+    background: white;
+    box-shadow: 0 0 30px -2px rgba(229,229,229,1);
+    border-radius: 2px;
+}
+.p-1{
+    padding: 10px;
+}
+.bx{
+    font-family: "Boxicons" !important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+}
+i{
+    cursor: pointer;
+}
+#map .icons .search{
+    position: absolute;
+    top: 10px;
+    left: 90%;
+    padding: 20px;
+}
+#map .effected-details{
+    width: 540px;
+    background: white;
+    box-shadow:0 0 30px -2px rgba(229,229,229,1);
+}
+#map .effected-details .box{
+    margin-left: 40px;
+}
+#map .effected-details li{
+    padding-left: 10px;
+    padding-right: 40px ;
+}
+#map .effected-details h1 span{
+    padding-top: 5px;
+    box-shadow:0 0 30px -2px rgba(229,229,229,1);
+}
+.p-05{
+    padding:10px 10px ;
+}
+li{
+    list-style: none;
+}
+.px-1{
+    padding: 0 10px;
+}
+#map .effected-details  h1{
+    font-size: 48px;
+    padding-right: 70px;
+}
+#map .effected-details .py-05 .usa,#map .effected-details .py-05 .italy  {
+    padding-right: 200px;
+}
+#map .effected-details .py-05 .china,
+#map .effected-details .py-05 .spain{
+    padding-right: 180px ;
+}
+#map .effected-details .py-05 .germany{
+    padding-right: 139px;
+}
+#map .effected-details .py-05 .iran{
+    padding-right: 199px;
+}
+#map .effected-details .py-05 .usa h2,
+#map .effected-details .py-05 .italy h2,
+#map .effected-details .py-05 .spain h2,
+#map .effected-details .py-05 .germany h2,
+#map .effected-details .py-05 .china h2,
+#map .effected-details .py-05 .iran h2{
+    padding-left: 20px;
+    word-spacing: 2px;
+}
+#subscribe{
+    position: relative;
+}
+.py-3{
+    padding: 30px 0;
+}
+#subscribe .main-content h1{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 77px;
+    text-align: center;
+    color: #0C6C44;
+}
+#subscribe .input-field {
+    box-shadow: 0 0 30px -2px rgba(229,229,229,1);
+    margin: 30px auto;
+    max-width: 500px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+#subscribe .input-field input,#subscribe .input-field input:focus{
+    background: #FFFFFF;
+    box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+    border-radius: 57px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-family: "Prompt",sans-serif;
+}
+#subscribe .input-field .btn{
+    padding: 0.8rem 2.2rem;
+    font-weight: 500;
+}
+#subscribe .subscribe-background{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 350px;
+    right: 150px;
+    transform: scale(0.6);
+}
+#subscribe .subscribe-background-1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    bottom: 250px;
+    right: 64px;
+    transform: scale(0.8);
+}
+#main-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main-footer .main-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
